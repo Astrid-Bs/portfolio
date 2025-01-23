@@ -4,8 +4,8 @@
 
 header,
 footer {
-  position: relative; /* Nécessaire pour utiliser z-index */
-  z-index: 10; /* S'assurer que le header est au-dessus de l'image */
+  position: relative; 
+  z-index: 10; 
   background-color: #101631;
   font-family: 'Roboto Condensed', sans-serif;
   letter-spacing: 4px;
@@ -25,14 +25,14 @@ h1 {
   font-size: 8em;
   color: #da3979;
   text-align: center;
-  margin: 100px;
+  margin: 20px;
 }
 
 h2 {
   font-size: 3em;
   color: #da3979;
   text-align: center;
-  margin: 100px;
+  margin: 20px;
 }
 
 h3 {
