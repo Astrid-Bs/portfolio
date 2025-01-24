@@ -1,152 +1,162 @@
 .profil {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 0 20px;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .profil-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
 }
 
 .image-container {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  max-width: 100%; 
-  z-index: -1;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 100%;
+    z-index: -1;
 }
 
 .image-arrondie {
-  width: 50vw;
-  height: auto;
-  border-radius: 50%;
+    width: 50vw;
+    height: auto;
+    border-radius: 50%;
 }
 
 .text-container {
-  max-width: 50%;
-  z-index: 1;
-  align-items: center;
-  border: solid #fff;
-  border-radius: 30px;
-  padding: 50px;
-  margin: 100px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border: solid #fff;
+    border-radius: 60px;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
 }
+
 
 .mail,
 .lien-icone {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 2rem;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
 .lien-icone ion-icon {
-  font-size: 5rem;
+    font-size: 5rem;
 }
 
+
 .stack {
-  text-align: center;
-  padding: 50px 20px;
-  z-index: -1;
+    text-align: center;
+    padding: 50px 20px;
+    z-index: -1;
 }
 
 .icons-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .icon ion-icon {
-  font-size: 10rem;
-  color: #da3979;
-  margin-bottom: 15px;
-  transition: color 0.3s ease;
+    font-size: 10rem;
+    color: #da3979;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
 }
 
 .projets {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
 }
 
 .project-card img {
-  border-radius: 50px;
+    border-radius: 50px;
+    filter: grayscale(100%);
+}
+
+.project-card:hover img {
+    filter: none;
+    transition: filter 0.3s ease;
 }
 
 .project-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .project-info {
-  border: solid #fff;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 1000px;
-  margin: 0 auto;
+    border: solid #fff;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+.project-info :hover {
+    border-radius: 60px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 1400px) {
-  .profil {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 10px;
-    height: auto;
-    overflow: hidden;
-  }
+    .profil {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        height: auto;
+        overflow: hidden;
+    }
 
-  .profil-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .profil-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .image-container {
-    position: relative;
-    transform: none;
-    top: auto;
-    right: auto;
-    margin-top: 20px;
-    width: 70vw;
-  }
+    .image-container {
+        position: relative;
+        transform: none;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        width: 70vw;
+    }
 
-  .image-arrondie {
-    width: 100%;
-    height: auto;
-  }
+    .image-arrondie {
+        width: 100%;
+        height: auto;
+    }
 
-  .text-container {
-    max-width: 90%;
-    margin: 20px 0;
-    padding: 30px;
-  }
+    .text-container {
+        max-width: 90%;
+        margin: 20px 0;
+        padding: 30px;
+    }
 }
